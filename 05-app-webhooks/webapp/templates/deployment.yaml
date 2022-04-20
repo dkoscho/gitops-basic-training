@@ -10,6 +10,8 @@ metadata:
     {{- with .Values.podAnnotations }}
       {{- toYaml . | nindent 8 }}
     {{- end }}
+  labels:
+    {{- include "webapp.selectorLabels" . | nindent 8 }}
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
