@@ -6,5 +6,6 @@ metadata:
 data:
   index.html: |
     <h1>Hello, ArgoCD!</h1> <p>
-    Content specified via ConfigMap.
+    Content specified via ConfigMap. <p>
+    Nice tool! <b>Like</b>
 
